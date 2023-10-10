@@ -1,0 +1,169 @@
+.items-section {
+  padding: 20px 0;
+}
+
+.items-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.items-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-column {
+  box-sizing: border-box;
+  margin: 20px;
+  width: calc(25% - 40px); /* Adjust this for responsiveness, e.g., 50% for two items per row, etc. */
+}
+
+.item-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  max-width: 100%;
+  display: block;
+}
+
+.item-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  color: #333;
+}
+
+.item-actions {
+  margin-top: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.action-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+.header-bg {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.custom-navbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar-menu a:hover {
+  background-color: #eee;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.navbar-menu li:hover .dropdown-menu {
+  display: block;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.header-title {
+  font-size: 2.5em; /* Similar to Bootstrap's .display-4 */
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+/* styles.css or your css file */
+.footer-bg {
+  background-color: darkgray; /* or any color you prefer */
+}
+
+.footer-container {
+  max-width: 1200px; /* or any max-width you prefer */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-text {
+  text-align: center;
+  color: white;
+}
