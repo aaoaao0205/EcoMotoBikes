@@ -11,6 +11,35 @@
   </head>
 
   <body>
+  <nav class="custom-navbar">
+    <div class="container">
+      <a class="navbar-brand">EcoMotoBikes</a>
+      <ul class="navbar-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/test_ride/new">Test Ride</a></li>
+        <li>
+          <a href="#">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Popular Items</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header-bg">
+    <div class="header-container">
+      <div class="header-content">
+        <h1 class="header-title">EcoMotoBikes</h1>
+      </div>
+    </div>
+  </header>
     <%= yield %>
+    <footer class="footer-bg">
+    <div class="footer-container">
+      <p class="footer-text">Copyright &copy; EcoMotoBikes 2023</p>
+    </div>
+  </footer>
   </body>
 </html>
