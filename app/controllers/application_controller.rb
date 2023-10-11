@@ -14,4 +14,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:last_name, :first_name])
   end
 
+  def item_params
+    params.require(:item).permit(:image, :item_name, :description, :price).merge(user_id: current_user.id)
+  end  
 end
