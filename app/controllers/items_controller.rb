@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-end
+  end 
 
   def create
     @item = Item.new(item_params)
@@ -14,5 +14,10 @@ end
     else
       render :new
     end
-  end
+  end 
+
+  def show
+    @item = Item.find(params[:id])
+  end  
 end
+

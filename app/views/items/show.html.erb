@@ -1,0 +1,28 @@
+<section class="custom-section">
+    <div class="custom-container">
+        <div class="custom-row">
+            <div class="custom-col">
+                <%= image_tag @item.image, class: "item-box-img" %>
+            </div>
+            <div class="custom-col">
+                <h1><%= @item.item_name %></h1>
+                <div><%= number_to_currency(@item.price, unit: '¥', precision: 0) %></div>
+                <p><%= @item.description %></p>
+                <% if user_signed_in? %>
+                <% if current_user.id == @item.user_id %>
+                    <div>
+                        <a href="<%= edit_item_path(@item) %>" class="btn-outline-dark">Edit</a>
+                        <a href="<%= item_path(@item) %>" data-confirm="Are you sure?" method="delete" class="btn-outline-danger">Delete</a>
+                    </div>
+                    <!--
+                <% else %>
+                    <#div>
+                        <#a href="<#= item_order_path(@item) %>" data-turbo="false" class="btn-outline-dark">Add to cart<#/a>
+                    <#/div>
+                <% end %>
+                -->
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>

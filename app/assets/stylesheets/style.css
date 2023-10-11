@@ -187,7 +187,6 @@
 }
 
 .custom-col {
-  background-color: #f0f0f0;
   padding: 20px;
   flex: 0 0 50%;
   max-width: 50%;
@@ -243,6 +242,47 @@
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
+}
+
+.custom-section {
+  padding: 50px 0;
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.custom-col {
+  flex: 1;
+  padding: 20px;
+}
+
+.item-box-img {
+  max-width: 600px;
+  max-height: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-outline-dark,
+.btn-outline-danger {
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.btn-outline-danger {
+  border-color: red;
+  color: red;
 }
 
 /* styles.css or your css file */
