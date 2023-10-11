@@ -101,10 +101,10 @@
 }
 
 .navbar-menu {
-  list-style: none;
-  padding: 0;
   display: flex;
+  justify-content: space-between;  
   align-items: center;
+  width: 100%;
 }
 
 .navbar-menu li {
@@ -134,6 +134,26 @@
 
 .navbar-menu li:hover .dropdown-menu {
   display: block;
+}
+
+.menu-items ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  margin: 0 10px;
+}
+
+.login-button ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;  
+}
+
+.login-button {
+  margin-left: auto; 
 }
 
 .header-content {
@@ -167,3 +187,5 @@
   text-align: center;
   color: white;
 }
+
+
