@@ -14,7 +14,7 @@
             <div class="item-column">
                 <div class="item-card">
                 <%= link_to item_path(item) do %>
-                    <%= image_tag item.image, class: "item-image" %>
+                <%= image_tag item.image, class: "item-image" if item.image.attached? %>
                 <% end %>
                 <div class="item-details">
                     <h5 class="item-name"><%= item.item_name %></h5>
@@ -22,7 +22,6 @@
                 </div>
                 <div class="item-actions">
                     <a class="action-btn" href="#">Add to cart</a>
-                    <%= link_to "Test Ride", new_test_drive_reservation_path(item_id: item.id), class: "action-btn" %>
                 </div>
                 </div>
             </div>
