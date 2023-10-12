@@ -1,0 +1,56 @@
+ <section>
+    <div class="custom-container">
+        <div class="custom-row">
+            <div class="custom-col">
+                    <h2>編集する</h2>
+                    <%= form_with model: @item, data: { turbo: false }, local: true do |f| %>
+                     <%#= render 'shared/error_messages', model: f.object %>
+
+                  <%# 商品画像 %>
+                  <div class="img-upload">
+                    <div class="weight-bold-text">商品画像</div>
+                    <div class="click-upload">
+                      <%= f.file_field :image, id:"card-img-top" %>
+                    </div>
+                  </div>
+
+                <%# 商品名と商品説明 %>
+                <div class="new-items">
+                  <div class="weight-bold-text">
+                    商品名
+                  <span class="badge">必須</span>
+                  </div>
+                  <%= f.text_field :item_name, class:"items-text", id:"item-name", maxlength:"40" %>
+                  <div class="items-explain">
+                    <div class="weight-bold-text">
+                      商品の説明
+                  <span class="badge">必須</span>
+                    </div>
+                    <%= f.text_area :description, class:"items-text", id:"item-info",rows:"7" ,maxlength:"1000" %>
+                  </div>
+                </div> 
+
+                <%# 販売価格 %>
+                <div class="sell-price">
+                    <div class="price-content">
+                      <div class="price-text">
+                        <span>価格</span>
+                    <span class="badge">必須</span>
+                      </div>
+                    </div>
+                </div>
+                <span class="sell-yen">¥</span>
+                <%= f.text_field :price, class:"price-input", id:"item-price" %>
+
+                <div class="sell-btn-contents">
+                    <div class="action-buttons"> 
+                        <%= f.submit "出品する", class: "btn btn-primary" %>
+                        <%= link_to 'もどる', root_path, class: "btn btn-secondary" %>
+                    </div>
+                </div>
+
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>
