@@ -1,11 +1,10 @@
 class CartsController < ApplicationController
+  before_action :authenticate_user!, only: [:add_item]
   before_action :set_cart, only: [:show, :add_item]
 
   def show
-    @cart = current_user.cart
     @cart_items = @cart.items
   end
-  
 
   def add_item
     item = Item.find(params[:id])
@@ -21,7 +20,6 @@ class CartsController < ApplicationController
   private
 
   def set_cart
-    @cart = current_user.cart || Cart.new
+    @cart = current_user.cart || current_user.create_cart
   end
 end
-
