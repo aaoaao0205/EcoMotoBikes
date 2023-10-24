@@ -301,4 +301,65 @@
   color: white;
 }
 
+/* ショッピングカートのタイトルのスタイル */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* カートのテーブルのスタイル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* 数量の増減ボタンのコンテナのスタイル */
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* 数量の増減ボタンのスタイル */
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+/* 合計金額のスタイル */
+.total {
+  margin-top: 20px;
+}
+
+/* 購入ボタンのスタイル */
+.checkout {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.total {
+  text-align: right;
+}
+
 
